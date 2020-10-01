@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+body {
+  margin: 0;
+  padding: 0 4rem;
+  color: #444;
+  background: -webkit-gradient(linear, left top, right top, from(#ffffff), to(#ece9e6));
+  background: linear-gradient(to right, #ffffff, #ece9e6);
+}
+
+body a {
+  text-decoration: none;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 4em;
+}
+
+.navbar .logo {
+  width: 33%;
+  line-height: 50px;
+}
+
+.navbar .logo a {
+  font-size: 1.5rem;
+  font-family: 'Monoton', cursive;
+}
+
+.navbar .menu {
+  width: 67%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar .menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  float: right;
+}
+
+.navbar .menu ul li {
+  padding-left: 2rem;
+}
+
+.navbar .menu ul li a {
+  color: black;
+}
+
+.navbar .menu ul li a:hover {
+  color: #1cb5e0;
+}
+
+main h1 {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.introduction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.introduction .intro-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 400px;
+}
+
+.introduction .intro-text a {
+  background: -webkit-gradient(linear, left top, right top, from(#000046), to(#1cb5e0));
+  background: linear-gradient(to right, #000046, #1cb5e0);
+  color: white;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.5em 1.5em;
+  border-radius: 25px;
+  text-transform: uppercase;
+}
+
+.introduction .intro-text a:hover {
+  color: #1cb5e0;
+}
+
+.introduction .intro-text span {
+  color: #1cb5e0;
+}
+
+.about-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background: -webkit-gradient(linear, left top, right top, from(#000046), to(#1cb5e0));
+  background: linear-gradient(to right, #000046, #1cb5e0);
+  color: white;
+}
+
+.about-icons .about-item {
+  text-align: center;
+}
+
+.about-icons span {
+  display: block;
+  padding-bottom: 1rem;
+}
+
+.projects {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 350px))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 350px));
+  gap: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.projects .project-item {
+  background: -webkit-gradient(linear, left top, right top, from(#000046), to(#1cb5e0));
+  background: linear-gradient(to right, #000046, #1cb5e0);
+  -webkit-box-shadow: gray 2px 4px;
+          box-shadow: gray 2px 4px;
+}
+
+.projects .project-img a {
+  padding: 0;
+}
+
+.projects .project-img a:hover {
+  opacity: 0.5;
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+}
+
+.projects .project-img img {
+  width: 350px;
+}
+
+.projects .project-text {
+  padding: 0;
+}
+
+.projects a {
+  display: block;
+  padding: 0.5rem;
+  background: #444;
+  color: white;
+}
+
+.projects a:hover {
+  color: #1cb5e0;
+  opacity: 0.9;
+}
+
+.projects .github-link {
+  background: #555;
+}
+
+.projects p {
+  margin: 0;
+  padding: 0.5rem;
+  color: #ddd;
+  background: -webkit-gradient(linear, left top, right top, from(#000046), to(#1cb5e0));
+  background: linear-gradient(to right, #000046, #1cb5e0);
+}
+
+.contact .contact-item {
+  background: -webkit-gradient(linear, left top, right top, from(#000046), to(#1cb5e0));
+  background: linear-gradient(to right, #000046, #1cb5e0);
+  color: #eee;
+  margin: 1rem 0;
+}
+
+.contact .contact-item a {
+  color: #eee;
+}
+
+.contact .contact-item a:hover {
+  color: #1cb5e0;
+}
+
+.contact h3 {
+  display: inline;
+}
+
+.contact span {
+  padding-left: 1rem;
+}
+
+.contact .contact-icon {
+  padding-left: 1rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+}
+/*# sourceMappingURL=main.css.map */

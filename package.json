@@ -1,0 +1,20 @@
+{
+  "name": "portfolio-3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Richardmwilson191/portfolio-3.git"
+  },
+  "author": "Richard Wilson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Richardmwilson191/portfolio-3/issues"
+  },
+  "homepage": "https://github.com/Richardmwilson191/portfolio-3#readme",
+  "dependencies": {
+    "sass": "^1.26.11"
+  }
+}

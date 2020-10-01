@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+@mixin easeOut {
+  transition: all 1s ease-out;
+}
+
+$primary-text: #444;
+$primary-color: linear-gradient(to right, #000046, #1cb5e0);
+$easeOut: all 1s ease-out;
+
+body {
+  margin: 0;
+  padding: 0 4rem;
+  color: $primary-text;
+  // padding: 0;
+  // box-sizing: border-box;
+  background: -webkit-linear-gradient(to right, #ffffff, #ece9e6);
+  background: linear-gradient(to right, #ffffff, #ece9e6);
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.navbar {
+  display: flex;
+  margin-bottom: 4em;
+
+  .logo {
+    width: 33%;
+    line-height: 50px;
+
+    a {
+      // padding-left: 4rem;
+      font-size: 1.5rem;
+      font-family: 'Monoton', cursive;
+    }
+  }
+
+  .menu {
+    width: 67%;
+    align-items: center;
+
+    ul {
+      display: flex;
+      list-style-type: none;
+      float: right;
+      // padding-right: 4rem;
+
+      li {
+        padding-left: 2rem;
+
+        a {
+          color: black;
+        }
+
+        a:hover {
+          color: #1cb5e0;
+        }
+      }
+    }
+  }
+}
+
+main {
+  h1 {
+    text-align: center;
+    padding: 1rem 0;
+  }
+}
+
+.introduction {
+  display: flex;
+  justify-content: space-between;
+
+  .intro-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 400px;
+
+    a {
+      background: linear-gradient(to right, #000046, #1cb5e0);
+      color: white;
+      width: fit-content;
+      padding: 0.5em 1.5em;
+      border-radius: 25px;
+      text-transform: uppercase;
+    }
+
+    a:hover {
+      color: #1cb5e0;
+    }
+
+    span {
+      color: #1cb5e0;
+    }
+  }
+}
+
+.about-icons {
+  display: flex;
+  justify-content: space-around;
+  background: $primary-color;
+  color: white;
+
+  .about-item {
+    text-align: center;
+  }
+
+  span {
+    display: block;
+    padding-bottom: 1rem;
+  }
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 350px));
+  gap: 1rem;
+  justify-content: center;
+
+  .project-item {
+    background: $primary-color;
+    box-shadow: gray 2px 4px;
+  }
+
+  .project-img {
+    a {
+      padding: 0;
+
+      &:hover {
+        opacity: 0.5;
+        transition: all 1s ease-out;
+      }
+    }
+
+    img {
+      width: 350px;
+    }
+  }
+
+  .project-text {
+    padding: 0;
+  }
+
+  a {
+    display: block;
+    padding: 0.5rem;
+    background: #444;
+    color: white;
+
+    &:hover {
+      color: #1cb5e0;
+      opacity: 0.9;
+    }
+  }
+
+  .github-link {
+    background: #555;
+  }
+
+  p {
+    margin: 0;
+    padding: 0.5rem;
+    color: #ddd;
+    background: $primary-color;
+  }
+}
+
+.contact {
+  .contact-item {
+    background: $primary-color;
+    color: #eee;
+    margin: 1rem 0;
+
+    a {
+      color: #eee;
+
+      &:hover {
+        color: #1cb5e0;
+      }
+    }
+  }
+
+  h3 {
+    display: inline;
+  }
+
+  span {
+    padding-left: 1rem;
+  }
+
+  .contact-icon {
+    padding-left: 1rem;
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+}
